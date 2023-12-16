@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head th:replace="~{common/fragment :: head}"></head>
+<body>
+    <header th:replace="~{common/fragment :: header}"></header>
+    <main class="container-fluid mt-3">
+        <div class="text-end">
+            <a href="/" class="btn btn-primary">Back</a>
+        </div>
+        <div class="container shadow-lg p-3 mt-3 rounded">
+            <h3 class="text-center">Add blog</h3>
+            <hr>
+            <form action="/submit" method="post">
+                <div class="form-group">
+                    <label>Enter heading</label>
+                    <input type="text" name="heading" class="form-control">
+                </div>
+                <div class="form-group">
+                    <lable>Enter description</lable>
+                    <textarea name="description" class="form-control"></textarea>
+                </div>
+                <input type="submit" class="btn btn-success mt-2">
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>

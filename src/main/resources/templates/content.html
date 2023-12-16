@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head th:replace="~{common/fragment :: head}"></head>
+
+<body>
+    <header th:replace="~{common/fragment :: header}"></header>
+
+        <main class="container-fluid mt-3">
+            <div class="text-end">
+                <a href="/" class="btn btn-primary">Back</a>
+            </div>
+
+            <div class="container shadow-lg mt-3 p-3 rounded">
+                <h2 class="text-center" th:text="${content.heading}"></h2>
+                <hr>
+                <p th:utext="${content.description}"></p>
+            </div>
+        </main>
+</body>
+</html>
